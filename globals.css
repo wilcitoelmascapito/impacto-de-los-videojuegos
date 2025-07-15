@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 208 100% 97%; /* Very light blue #f0f8ff */
+    --foreground: 210 10% 23%; /* Dark gray for text, good contrast */
+
+    --card: 208 100% 100%; /* Slightly lighter than background or white */
+    --card-foreground: 210 10% 23%;
+
+    --popover: 208 100% 100%;
+    --popover-foreground: 210 10% 23%;
+
+    --primary: 207 68% 53%; /* Deep sky blue #3498db */
+    --primary-foreground: 210 40% 98%; /* Light color for text on primary */
+
+    --secondary: 208 80% 90%; /* Lighter shade of blue for secondary elements */
+    --secondary-foreground: 207 68% 40%; /* Darker blue for text on secondary */
+
+    --muted: 208 60% 88%; /* Muted blue */
+    --muted-foreground: 208 30% 50%; /* Muted text */
+
+    --accent: 145 63% 49%; /* Soft Green #2ecc71 */
+    --accent-foreground: 145 60% 95%; /* Very light green or white for text on accent */
+
+    --destructive: 0 72% 51%; /* Standard destructive red */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 208 40% 85%; /* Lighter blue border */
+    --input: 208 40% 90%; /* Input background */
+    --ring: 207 68% 53%; /* Primary color for rings */
+
+    --radius: 0.5rem;
+
+    /* Chart colors - can be adjusted to fit the theme */
+    --chart-1: 207 68% 53%; /* Primary */
+    --chart-2: 145 63% 49%; /* Accent */
+    --chart-3: 200 70% 60%; /* Another blue shade */
+    --chart-4: 170 50% 55%; /* A teal/green shade */
+    --chart-5: 30 80% 65%;  /* An orange/yellow shade */
+
+    /* Sidebar specific variables (though we are using a top nav, these are standard in shadcn) */
+    --sidebar-background: 208 90% 95%;
+    --sidebar-foreground: 210 10% 30%;
+    --sidebar-primary: 207 68% 53%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 145 63% 85%;
+    --sidebar-accent-foreground: 145 60% 20%;
+    --sidebar-border: 208 40% 80%;
+    --sidebar-ring: 207 68% 53%;
+  }
+
+  .dark {
+    /* For dark mode, we can invert or choose a different palette.
+       Using a darker version of the blues and greens.
+    */
+    --background: 210 15% 12%; /* Dark blue-gray */
+    --foreground: 210 20% 90%; /* Light gray for text */
+
+    --card: 210 15% 18%;
+    --card-foreground: 210 20% 90%;
+
+    --popover: 210 15% 15%;
+    --popover-foreground: 210 20% 90%;
+
+    --primary: 207 68% 58%; /* Slightly brighter blue for dark mode */
+    --primary-foreground: 210 20% 10%;
+
+    --secondary: 210 15% 25%;
+    --secondary-foreground: 210 20% 85%;
+
+    --muted: 210 15% 22%;
+    --muted-foreground: 210 20% 60%;
+
+    --accent: 145 63% 54%; /* Slightly brighter green for dark mode */
+    --accent-foreground: 145 20% 10%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 15% 30%;
+    --input: 210 15% 28%;
+    --ring: 207 68% 58%;
+
+    /* Chart colors for dark mode */
+    --chart-1: 207 68% 58%;
+    --chart-2: 145 63% 54%;
+    --chart-3: 200 70% 65%;
+    --chart-4: 170 50% 60%;
+    --chart-5: 30 80% 70%;
+
+    --sidebar-background: 210 15% 10%;
+    --sidebar-foreground: 210 20% 85%;
+    --sidebar-primary: 207 68% 58%;
+    --sidebar-primary-foreground: 210 20% 10%;
+    --sidebar-accent: 145 63% 20%;
+    --sidebar-accent-foreground: 145 20% 80%;
+    --sidebar-border: 210 15% 25%;
+    --sidebar-ring: 207 68% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
