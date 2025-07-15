@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #e9ecef;
+      padding: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0d6efd;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      color: #0d6efd;
+      font-size: 28px;
+    }
+
+    .projects, .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project, .skill {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .project h3, .skill h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      font-size: 20px;
+      color: #0d6efd;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #e9ecef;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 28px;
+      }
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tu Nombre</h1>
+    <p>Desarrollador Web | Frontend | Creativo</p>
+  </header>
+
+  <nav>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="proyectos">
+    <h2>Proyectos Destacados</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Proyecto 1</h3>
+        <p>Sitio web responsivo para portafolio personal usando HTML, CSS y JavaScript.</p>
+      </div>
+      <div class="project">
+        <h3>Proyecto 2</h3>
+        <p>Aplicación de tareas con almacenamiento local en el navegador.</p>
+      </div>
+      <div class="project">
+        <h3>Proyecto 3</h3>
+        <p>Clon de página con diseño moderno inspirado en Netflix o Spotify.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <div class="skill"><h3><i class="fab fa-html5"></i> HTML5</h3></div>
+      <div class="skill"><h3><i class="fab fa-css3-alt"></i> CSS3</h3></div>
+      <div class="skill"><h3><i class="fab fa-js"></i> JavaScript</h3></div>
+      <div class="skill"><h3><i class="fab fa-git-alt"></i> Git</h3></div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Contacto</h2>
+    <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+    <p>Correo: <a href="mailto:tuemail@gmail.com">tuemail@gmail.com</a></p>
+    <div class="socials">
+      <a href="https://github.com/tuusuario" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/tuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Tu Nombre - Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
